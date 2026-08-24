@@ -7,6 +7,7 @@ const heroImage = "/manus-storage/tutorlink-hero_1a469003.jpg";
 const tutorImage = "/manus-storage/tutorlink-tutor_c743ef50.jpg";
 const notesImage = "/manus-storage/tutorlink-notes_ac528698.jpg";
 const logoImage = "/manus-storage/tutorlink-logo_49c89470.png";
+const tutorFormUrl = "https://docs.google.com/forms/d/e/1FAIpQLSd0oxmcshU8bqgeDbippxlRu2jJjtaw5G2pSnLHLCyDhF1vvQ/viewform?usp=publish-editor";
 
 const faqs = [
   { q: "HK$600 包括甚麼？", a: "HK$600 是一次性的導師配對服務費，包括了解你的教學背景、整理需求、按條件推薦合適學生，以及協助建立初步聯絡。成功完成首次配對後，TutorLink HK 不會再向導師收取平台服務費、月費或佣金。" },
@@ -25,8 +26,8 @@ export default function Home() {
   const [openFaq, setOpenFaq] = useState<number | null>(0);
 
   const handleApply = () => {
-    toast.success("申請入口已準備好", { description: "正式上線時可接駁表單、WhatsApp 或電郵收集導師資料。" });
-    scrollToId("apply");
+    toast.success("正在開啟導師申請表", { description: "請在 Google Form 填寫你的教學資料。" });
+    window.open(tutorFormUrl, "_blank", "noopener,noreferrer");
   };
 
   return (
@@ -87,9 +88,9 @@ export default function Home() {
 
       <section id="faq" className="section faq-section"><div className="faq-heading"><div className="section-index">06 <span>QUESTIONS, ANSWERED</span></div><h2>你想知道的，<br /><i>我們先寫好。</i></h2></div><div className="faq-list">{faqs.map((faq, i) => <div className={openFaq === i ? "faq-item active" : "faq-item"} key={faq.q}><button onClick={() => setOpenFaq(openFaq === i ? null : i)}><span>{faq.q}</span><ChevronDown size={20} /></button>{openFaq === i && <p>{faq.a}</p>}</div>)}</div></section>
 
-      <section id="apply" className="apply-section"><div className="apply-copy"><div className="section-index light">07 <span>TAKE THE FIRST STEP</span></div><h2>有合適學生時，<br /><i>通知我。</i></h2><p>正式上線後，這裡會接駁導師申請表。現階段可先以電郵留下你的基本資料，方便我們整理招募名單。</p></div><div className="apply-card"><div className="apply-card-top"><Mail size={21} /><span>導師申請預告</span></div><h3>先留下你的<br />教學方向。</h3><p>姓名、專長科目、可授課地區／模式及聯絡方法。</p><a className="primary-btn" href="mailto:hello@tutorlink.hk?subject=TutorLink%20HK%20導師申請">電郵聯絡我們 <ArrowUpRight size={18} /></a></div></section>
+      <section id="apply" className="apply-section"><div className="apply-copy"><div className="section-index light">07 <span>TAKE THE FIRST STEP</span></div><h2>有合適學生時，<br /><i>通知我。</i></h2><p>導師申請表現已開放。填寫你的教學背景與可配對條件，讓我們按科目、年級、地區及時間了解你。</p></div><div className="apply-card"><div className="apply-card-top"><Mail size={21} /><span>Google Form 導師申請</span></div><h3>先留下你的<br />教學方向。</h3><p>姓名、專長科目、可授課地區／模式、時間、課酬及教學經驗。</p><a className="primary-btn" href={tutorFormUrl} target="_blank" rel="noreferrer">開啟導師申請表 <ArrowUpRight size={18} /></a></div></section>
 
-      <footer><div className="footer-brand"><img src={logoImage} alt="" /><span><strong>TutorLink</strong><em>HK</em></span></div><p>一對一補習導師配對，清楚、直接、只收一次。</p><div className="footer-links"><a href="#rules">服務規則</a><a href="#faq">常見問題</a><a href="mailto:hello@tutorlink.hk">hello@tutorlink.hk</a></div><small>© 2026 TutorLink HK · 服務規則草案，正式上線前更新</small></footer>
+      <footer><div className="footer-brand"><img src={logoImage} alt="" /><span><strong>TutorLink</strong><em>HK</em></span></div><p>一對一補習導師配對，清楚、直接、只收一次。</p><div className="footer-links"><a href="#rules">服務規則</a><a href="#faq">常見問題</a><a href={tutorFormUrl} target="_blank" rel="noreferrer">導師申請表</a></div><small>© 2026 TutorLink HK · 服務規則草案，正式上線前更新</small></footer>
     </main>
   );
 }
