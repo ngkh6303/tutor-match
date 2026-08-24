@@ -14,3 +14,8 @@
 - [x] 清楚列明導師註冊免費，並與 HK$600 服務費的付款時點區分。
 - [x] 更新 Google Form 說明及方案確認文字，使付款流程一致。
 - [ ] 完成網站檢查並建立新 checkpoint。
+
+## 年級選項更新
+
+- [x] 在 Google Form 年級／考試階段問題加入「中四至中六／DSE」。
+- [x] 確認新選項已保存；Google Forms 顯示 All changes saved in Drive。
