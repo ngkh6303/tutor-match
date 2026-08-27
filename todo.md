@@ -19,3 +19,28 @@
 
 - [x] 在 Google Form 年級／考試階段問題加入「中四至中六／DSE」。
 - [x] 確認新選項已保存；Google Forms 顯示 All changes saved in Drive。
+
+## 授課地區更新
+
+- [x] 已按用戶要求將授課地區改為港鐵站選項。
+- [x] Google Form 顯示 All changes saved in Drive，並已更新記錄。
+
+## 表格欄位更新
+
+- [x] 確認 Google Form 可編輯。
+- [x] 將授課地區改為港鐵站可多選欄位。
+- [x] 將課酬改為 HK$150、300、450、600、750、900 及 HK$1,050 或以上。
+- [x] 加入導師可多選的平日及週末合理上課時段。
+- [x] 核對 Google Form 選項並更新記錄。
+
+## 只替換授課地區欄位
+
+## SEO 更新
+
+- [x] 更新首頁 description、keywords、canonical、Open Graph 及 Twitter meta tags。
+- [x] 新增 client/public/robots.txt。
+- [x] 新增 client/public/sitemap.xml。
+
+- [x] 將「可接受的授課地區／交通範圍」輸入框改為港鐵站可多選欄位。
+- [x] 核對姓名、年級、課酬及時間欄位內容；年級保留三個正確選項。
+- [x] 確認 Google Form 保存更新。
