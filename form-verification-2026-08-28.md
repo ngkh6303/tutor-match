@@ -21,3 +21,8 @@ Google Form 編輯網址：https://docs.google.com/forms/d/1Md7eXV7T4YOZoooAxzqy
 ## 網站核對
 
 首頁已完成 production build。SEO 更新包括 description、keywords、canonical、Open Graph、Twitter card、robots.txt 及 sitemap.xml。首頁桌面版全頁截圖核對完成；既有 editorial 教育品牌版面維持一致，沒有因 SEO 修改而出現視覺異常。
+
+
+## 第二輪更新核對
+
+公開回應頁已確認：授課地區現在列出完整港鐵站清單，公開題型為 checkbox；年級／考試階段保留幼稚園／小學、中一至中三、中四至中六／DSE；可上課時間已加入平日 15:00–17:00、16:00–18:00、17:00–19:00 等小學放學後時段，以及平日晚上和週末時段，公開頁已移除 Option 14。
